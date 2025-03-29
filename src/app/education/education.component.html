@@ -1,0 +1,7 @@
+<h2>Education</h2>
+<ul>
+  <li *ngFor="let edu of educationList">
+    <strong>{{ edu.level }}</strong>, {{ edu.university }}<br />
+    <em *ngIf="edu.thesis">Thesis: {{ edu.thesis }}</em>
+  </li>
+</ul>
